@@ -1,0 +1,8 @@
+<!-- les tags meta -->
+	<meta charset="utf-8">
+	<meta name="desccription" content="Business Support Platform -
+				Financing for Small Business">
+	<meta name="keywords" content="loans, startup financing, business tools,
+				microfinance, financial services">
+	<meta name="author" content="Grow  by Aisely">
+	<meta name="viewport" content="width=device-width, initial-scale=1">

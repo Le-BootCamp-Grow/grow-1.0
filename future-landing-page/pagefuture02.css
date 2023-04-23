@@ -1,0 +1,179 @@
+html,
+body {
+	height: 100%;
+	/*background: #333;*/
+}
+
+body {
+	font-family: 'Verdana', 'Tahoma', sans-serif;
+	margin: 0;
+}
+
+/*L'image hero*/
+header {
+	/*Utiliser le linear-gradient pour ajouter un effet de superposition
+	sombre à l'image de l'arrière plan. Le texte serait plus facile à lire alors*/
+
+	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./fabio-lucas-_eYDuLSjkpw-unsplash.jpg);
+
+	/*Définir la taille*/
+
+	height: 100vh;
+
+	/*Positionner et centrer l'image pour s'adapter à tous les écrans*/
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/*La navbar*/
+nav {
+	border: 1px solid whitesmoke;
+	height: 4em;
+	position: relative;
+	/*Try absolute position at the end of the activity*/
+	background-color: whitesmoke;
+	opacity: .85;
+	z-index: 1;
+	/*let learners skip padding until the activity is done*/
+}
+
+header>nav .logo {
+	width: max-content;
+	height: 4em;
+	/*border: 1px solid whitesmoke;*/
+	position: absolute;
+	left: 1%;
+}
+
+header>nav>.logo>h2 {
+	/*border: 1px solid whitesmoke;*/
+	font-size: 2rem;
+	color: #3498db;
+	text-align: center;
+	margin: 12px auto;
+	letter-spacing: -1px;
+	font-family: 'Franklin Gothic Medium';
+	font-weight: bolder;
+}
+
+/*Le barre de navigation*/
+ul {
+	/*border: 1px solid whitesmoke;*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	/*let learners skip padding until the menu is completed*/
+}
+
+ul.menu-header {
+	/*NB: ul.menu-header est appelé spécifiquement ici, au lieu de ul global */
+	width: max-content;
+	display: inline-block;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+ul>li {
+	float: left;
+	width: 160px;
+	height: 4em;
+	line-height: 4em;
+	font-size: 1rem;
+	/*text-align: center; /*let learners skip text-align until the menu is completed and the padding is added*/
+}
+
+ul>li>a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding-left: 12px;
+}
+
+ul>li>a:hover {
+	background-color: lightseagreen;
+}
+
+ul>li>ul>li {
+	display: none;
+}
+
+ul>li:hover>ul>li {
+	display: block;
+	background-color: whitesmoke;
+	padding-top: 4px;
+}
+
+ul>li:hover>ul>li#bottom-1,
+li#bottom-2 {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+nav>button {
+	border: none;
+	background: none;
+	border: 1px solid #3498db;
+	padding: 12px 24px;
+	width: max-content;
+	outline: none;
+	color: #3498db;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: .25s;
+	font-size: 1rem;
+	cursor: pointer;
+	position: relative;
+	top: 50%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+}
+
+nav>button:hover {
+	background: #3498db;
+	color: whitesmoke;
+}
+
+/* Placer le texte au centre de l'image */
+div.hero-texte {
+	text-align: center;
+	color: whitesmoke;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+div.hero-texte>h1 {
+	font-size: 3rem;
+}
+
+p#hero-caption {
+	font-size: 1.5rem;
+}
+
+div.hero-texte>button {
+	border: none;
+	background: none;
+	border: 2px solid #3498db;
+	padding: 14px 40px;
+	width: 200px;
+	outline: none;
+	color: whitesmoke;
+	border-radius: 25px;
+	transition: .25s;
+	font-size: 1rem;
+	cursor: pointer;
+	/*display: block;
+	text-align: center;
+	margin: 20px auto;*/
+}
+
+div.hero-texte>button:hover {
+	background: #3498db;
+}

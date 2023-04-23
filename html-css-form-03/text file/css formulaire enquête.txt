@@ -1,0 +1,52 @@
+body {
+            background-color: #23464f;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #fff;
+        }
+        form {
+            background-color: #fff;
+            max-width: 40%;
+            /* max-width: 500px; */
+            margin: 3rem auto;
+            padding: 1.75rem 1.25rem;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: .75rem;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #6f6f6f;
+            border-radius: .25rem;
+            font-family: inherit;
+            padding: .5rem;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type= "radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color: #23464f;
+            border: none;
+            /* border: 1px solid #6f6f6f; */
+            border-radius: .25rem;
+            font-family: inherit;
+            font-size: 1.25rem;
+            display: block;
+            width: 100%;
+            margin: 3rem auto 1.25rem auto;
+            padding: .5rem 0;
+        }

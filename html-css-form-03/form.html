@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow 1.0 | Survery Form</title>
+
+    <!-- <style>
+        body {
+            background-color: #23464f;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 40%;
+            /* max-width: 500px; */
+            margin: 3rem auto;
+            padding: 1.75rem 1.25rem;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+        }
+
+        .form-control {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: .75rem;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #6f6f6f;
+            border-radius: .25rem;
+            font-family: inherit;
+            padding: .5rem;
+            display: block;
+            width: 95%;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        button {
+            background-color: #23464f;
+            border: none;
+            /* border: 1px solid #6f6f6f; */
+            border-radius: .25rem;
+            font-family: inherit;
+            font-size: 1.25rem;
+            display: block;
+            width: 100%;
+            margin: 3rem auto 1.25rem auto;
+            padding: .5rem 0;
+        }
+    </style> -->
+
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        /* Form styles */
+        #formulaire {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grow Bootcamp - Formulaire d'enquête</h1>
+
+    <!--Créer le formulaire ici-->
+    <form action="" method="" id="formulaire">
+        <!--Les contenus du formulaire ci-dessous-->
+        <div class="form-control">
+            <label for="name" id="label_name">Nom :</label>
+            <input type="text" id="name" name="nom_contact" placeholder="Votre nom ici">
+        </div>
+        <div class="form-control">
+            <label for="email" id="label_email">E-mail :</label>
+            <input type="text" id="email" name="email_contact" placeholder="Votre email ici">
+        </div>
+        <div class="form-control">
+            <label for="date_naissance" id="label_date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance">
+        </div>
+        <div class="form-control">
+            <label for="role" id="label_role">Quel rôle vous convient le plus?</label>
+            <select name="role" id="role">
+                <option value="etudiant">Etudiant</option>
+                <option value="stagaire">Stagaire</option>
+                <option value="professionnel">Professionnel</option>
+                <option value="autre">Autre</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>Est-ce que vous recommenderiez Grow Bootcamp un(e) ami(e)?</label>
+
+            <!--Utiliser les radios-->
+            <label for="recommander_oui">
+                <input type="radio" id="recommander_oui" name="recommendation">Oui</input>
+            </label>
+            <label for="recommander_non">
+                <input type="radio" id="recommander_non" name="recommendation">Non</input>
+            </label>
+            <label for="recommander_pas_sur">
+                <input type="radio" id="recommander_pas_sur" name="recommendation">Peut-être</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Quelles technologies vous intéressent?
+                <small>(Veuiilez cocher toutes cases impliquées)</small>
+            </label>
+
+            <!--Utiliser les radios-->
+            <label for="case_1">
+                <input type="checkbox" id="case_1" name="case">HTML/CSS</input>
+            </label>
+            <label for="case_2">
+                <input type="checkbox" id="case_2" name="case">JavaScript/TypeScript</input>
+            </label>
+            <label for="case_3">
+                <input type="checkbox" id="case_3" name="case">UI/UX</input>
+            </label>
+            <label for="case_4">
+                <input type="checkbox" id="case_4" name="case">Base de données</input>
+            </label>
+            <label for="case_5">
+                <input type="checkbox" id="case_5" name="case">Frontend</input>
+            </label>
+            <label for="case_6">
+                <input type="checkbox" id="case_6" name="case">Outils de Cloud</input>
+            </label>
+            <label for="case_7">
+                <input type="checkbox" id="case_7" name="case">Data Science</input>
+            </label>
+            <label for="case_8">
+                <input type="checkbox" id="case_8" name="case">APIs</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="message" id="label_message">Voudriez vous nous laisser un message ou une requête?</label>
+            <!--Utiliser une zone de texte à multiples lignes-->
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ici"></textarea>
+        </div>
+        <button type="submit" value="submit">
+            Envoyer
+        </button>
+    </form>
+</body>
+
+</html>

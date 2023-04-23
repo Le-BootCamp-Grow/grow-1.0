@@ -1,0 +1,59 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Verdana', 'Tahoma', sans-serif;
+	/*margin: 0;*/
+}
+section#hero {
+	/*Utiliser le linear-gradient pour ajouter un effet de superposition
+	sombre à l'image de l'arrière plan. Le texte serait plus facile à lire alors*/
+
+	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(pexels-francesco-ungaro-96381.jpg);
+
+	/*Définir la taille*/
+
+	height: 80%;
+
+	/*Positionner et centrer l'image pour s'adapter à tous les écrans*/
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* Placer le texte au centre de l'image */
+div.hero-texte {
+	text-align: center;
+	color: whitesmoke;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+div.hero-texte > h1 {
+	font-size: 3rem;
+}
+p#hero-caption {
+	font-size: 1.5rem;
+}
+div.hero-texte > button {
+	border: none;
+	background: none;
+	border: 2px solid #3498db;
+	padding: 14px 40px;
+	width: 200px;
+	outline: none;
+	color: whitesmoke;
+	border-radius: 25px;
+	transition: .25s;
+	font-size: 1rem;
+	cursor: pointer;
+	/*display: block;
+	text-align: center;
+	margin: 20px auto;*/
+}
+div.hero-texte > button:hover {
+	background: #3498db;
+}
